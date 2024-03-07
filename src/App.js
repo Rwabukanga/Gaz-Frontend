@@ -5,7 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import AddBranch from './components/AddBranch';
 import Users from './components/Users';
-
+import FileUpload from './components/FileUpload';
 
 function App() {
   return (
@@ -37,6 +37,12 @@ function App() {
                             exact
                             path="/alluser"
                             element={<Users />}
+                        ></Route>
+
+                        <Route
+                            exact
+                            path="/upload"
+                            element={<FileUpload />}
                         ></Route>
 
                     </Routes>

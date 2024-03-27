@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Users() {
     const [reggs, setReggs] = useState([]);
-    const [alert, setAlert] = useState('');
+    const [] = useState('');
     const [filterInput, setFilterInput] = useState('');
 
     useEffect(() => {
@@ -26,7 +26,11 @@ function Users() {
     };
 
     return (
-        <div className="container">
+
+        <div class="card">
+  <h5 class="card-header">Users List</h5>
+  <div class="card-body">
+  <div className="container">
             <div className="input-group mb-3">
                 <div className="input-group-prepend">
                     <span className="input-group-text"><i className="fas fa-search"></i></span>
@@ -56,6 +60,10 @@ function Users() {
                 </tbody>
             </table>
         </div>
+  </div>
+</div>
+
+        
     );
 }
 

@@ -29,7 +29,12 @@ function AddBranch() {
   };
 
   return (
-    <div className="container">
+
+
+    <div class="card">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+  <div className="container">
       <form onSubmit={addBranch}>
         <div className="row g-0">
           <div className="col-sm-6 col-md-8">
@@ -38,23 +43,23 @@ function AddBranch() {
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-8 col-md-6">
+        <div className="row g-0">
+        <div className="col-sm-6 col-md-8">
             <label>Last Name</label>
             <input type="text" id="lastName" className="form-control" value={branch.lastName || ''} onChange={(e) => setBranch({...branch, lastName: e.target.value})} />
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-xs-12 col-sm-8 col-sm-offset col-md-6 col-md-offset-3">
+        <div className="row g-0">
+        <div className="col-sm-6 col-md-8">
             <label>E-mail</label>
             <input type="email" id="email" className="form-control" value={branch.email || ''} onChange={(e) => setBranch({...branch, email: e.target.value})} />
           </div>
         </div>
 
         <br />
-        <div className="row">
-          <div className="col-9">
+        <div className="row g-0">
+        <div className="col-sm-6 col-md-8">
             <button className="btn btn-primary" type="submit">Submit</button>
           </div>
         </div>
@@ -62,6 +67,10 @@ function AddBranch() {
 
       {alert && <div className="alert alert-warning">{alert}</div>}
     </div>
+  </div>
+</div>
+
+    
   );
 }
 

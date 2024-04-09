@@ -85,6 +85,7 @@ export default Users;
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 <div class="card">
   <h5 class="card-header">Featured</h5>
   <div class="card-body">
@@ -95,3 +96,5 @@ export default Users;
 </div>
 
 >>>>>>> f6529f8dbb3eca8b61f6b5c01e102dbb9a4e8add
+=======
+>>>>>>> Demo
